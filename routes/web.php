@@ -56,7 +56,15 @@ Route::get('/', function () {
             "route" => "shop",
             "sub_links" => [
                 [
-                    "name" => "link",
+                    "name" => "dc shop",
+                    "route" => "link"
+                ],
+                [
+                    "name" => "print subscription",
+                    "route" => "link"
+                ],
+                [
+                    "name" => "comic shop locator",
                     "route" => "link"
                 ]
             ]
