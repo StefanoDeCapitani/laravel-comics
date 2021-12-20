@@ -1,0 +1,26 @@
+.buy-comics-section {
+    background-color: $clr_primary;
+    .nav {
+        padding: 3rem 0;
+        .nav__ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+            text-transform: uppercase;
+            img {
+                height: 57px;
+            }
+            .nav__a {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            .nav__li:last-of-type {
+                img {
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

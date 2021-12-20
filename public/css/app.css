@@ -1,20 +1,35 @@
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;
 
-700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap);.header .container {
+700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap);.container {
   max-width: 1200px;
   margin: auto;
+}
+
+.a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ul {
+  list-style: none;
+}
+
+.btn {
+  border: none;
+  display: block;
+  cursor: pointer;
 }
 
 .header .blue-line {
   background-color: #0282f9;
 }
 
-.header .blue-line .container {
+.header .blue-line .blue-line__container {
   text-transform: uppercase;
   color: white;
   display: flex;
   justify-content: flex-end;
-  gap: 3rem;
+  gap: 4rem;
   font-size: 0.7rem;
   padding: 0.3rem 1rem;
 }
@@ -60,7 +75,8 @@
   color: #0282f9;
 }
 
-.header .nav .nav__ul .nav__li::after {
+.header .nav .nav__ul .nav__li::after,
+.header .nav .nav__ul .nav__li.active {
   content: "";
   position: absolute;
   bottom: 0;
@@ -141,6 +157,117 @@
   font-size: 1.1rem;
 }
 
+.jumbotron {
+  height: 400px;
+}
+
+.jumbotron img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.current-series-section {
+  background-color: #1c1c1c;
+}
+
+.current-series-section .container {
+  position: relative;
+  padding: 3rem 0 1.5rem;
+}
+
+.current-series-section .section-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translatey(-50%);
+  background: #0282f9;
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.current-series-section .comics-grid {
+  padding: 1.8rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.8rem;
+}
+
+.current-series-section .comics-grid .comic {
+  width: 100%;
+}
+
+.current-series-section .comics-grid .comic .ratio {
+  width: 100%;
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.current-series-section .comics-grid .comic .ratio img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.current-series-section .comics-grid .comic .series-title {
+  padding: 1.5rem 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.current-series-section .btn--load-more {
+  background: #0282f9;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.8rem 4rem;
+  margin: auto;
+}
+
+.buy-comics-section {
+  background-color: #0282f9;
+}
+
+.buy-comics-section .nav {
+  padding: 3rem 0;
+}
+
+.buy-comics-section .nav .nav__ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.buy-comics-section .nav .nav__ul img {
+  height: 57px;
+}
+
+.buy-comics-section .nav .nav__ul .nav__a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buy-comics-section .nav .nav__ul .nav__li:last-of-type img {
+  height: 40px;
+}
+
 *,
 *::after,
 *::before {
@@ -152,14 +279,5 @@
 :root {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Open Sans Condensed", sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
 }
 

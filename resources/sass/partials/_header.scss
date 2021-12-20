@@ -1,16 +1,12 @@
 .header {
-    .container {
-        max-width: 1200px;
-        margin: auto;
-    }
     .blue-line {
         background-color: $clr_primary;
-        .container {
+        .blue-line__container {
             text-transform: uppercase;
             color: white;
             display: flex;
             justify-content: flex-end;
-            gap: 3rem;
+            gap: 4rem;
             font-size: 0.7rem;
             padding: 0.3rem 1rem;
         }
@@ -46,7 +42,8 @@
                 .nav__drop-down-caret {
                     color: $clr_primary;
                 }
-                &::after {
+                &::after,
+                &.active {
                     content: "";
                     position: absolute;
                     bottom: 0;
