@@ -11,7 +11,7 @@
         .sitemap__nav {
             position: relative;
             z-index: 1;
-            height: 320px;
+            height: 340px;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
@@ -24,7 +24,7 @@
             .ul {
                 display: flex;
                 flex-direction: column;
-                gap: 8px;
+                gap: 10px;
                 .li {
                     color: #959595;
                 }

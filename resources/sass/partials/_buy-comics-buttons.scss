@@ -1,0 +1,50 @@
+.buy-comics--details {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: #f6f6f6;
+
+    .buy-comics-buttons__btn-group {
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: #a5a5a5;
+        text-transform: uppercase;
+
+        .buy-comics-buttons__btn {
+            display: flex;
+            align-items: flex-start;
+            flex: 0 0 25%;
+            padding: 15px;
+            border-left: 1px solid #dfdfdf;
+
+            .cta-icon {
+                position: relative;
+                height: 36px;
+                width: 37px;
+                overflow: hidden;
+                margin-left: auto;
+
+                &.cta-icon--1 .img {
+                    position: absolute;
+                    top: 0;
+                    left: -37px;
+                }
+                &.cta-icon--2 .img {
+                    position: absolute;
+                    top: 0;
+                    left: -37px * 2;
+                }
+                &.cta-icon--3 .img {
+                    position: absolute;
+                    top: 0;
+                    left: -37px * 3;
+                }
+            }
+
+            &:last-of-type {
+                border-right: 1px solid #dfdfdf;
+            }
+        }
+    }
+}

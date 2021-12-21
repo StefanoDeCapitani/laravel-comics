@@ -1,11 +1,8 @@
 .jumbotron {
+    background-image: url("/images/jumbotron.jpg");
+    background-position: top;
+    background-size: cover;
     height: 400px;
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: top;
-    }
 }
 .current-series-section {
     background-color: #1c1c1c;

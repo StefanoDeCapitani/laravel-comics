@@ -1,0 +1,115 @@
+.blue-stripe {
+    background: $clr-primary;
+    height: 80px;
+    .thumbnail-container {
+        position: relative;
+        .thumbnail {
+            position: absolute;
+            left: 120px;
+            bottom: -60px;
+            border: 1px solid white;
+        }
+    }
+}
+
+.comic-description__container,
+.comic-specs__container,
+.buy-comics--details__container {
+    padding: 0 120px;
+}
+
+.comic-description__container {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    gap: 3rem;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .comic-description__article {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .h1 {
+            padding: 1rem 0 0.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+            color: #003f5e;
+        }
+
+        .green-box {
+            background-color: #55ba59;
+            display: flex;
+            border-bottom: 1px solid #357739;
+            font-size: 0.8rem;
+            .price-container {
+                font-weight: 700;
+                flex: 1 0 auto;
+                display: flex;
+                color: #a8f98e;
+                padding: 16px 25px;
+                border-right: 1px solid #357739;
+                .price {
+                    padding-left: 0.5rem;
+                    color: white;
+                }
+                .availability {
+                    text-transform: uppercase;
+                    margin-left: auto;
+                }
+            }
+            .btn--availability {
+                padding: 16px 25px;
+                flex: 0 0 auto;
+                color: white;
+            }
+        }
+
+        .description {
+            color: $clr-secondary;
+            line-height: 1.5rem;
+            font-size: 0.8rem;
+        }
+    }
+
+    .comic-description__aside {
+        text-align: end;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $clr-secondary;
+    }
+}
+
+.comic-specs {
+    background-color: #f6f6f6;
+    .comic-specs__container {
+        padding-top: 29px;
+        padding-bottom: 100px;
+        .left-column,
+        .right-column {
+            & > * {
+                border-bottom: 1px solid #dfdfdf;
+            }
+        }
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        font-size: 0.7rem;
+        color: #003f5e;
+        .comic-spec__category {
+            font-size: 1rem;
+            padding-bottom: 1.4rem;
+        }
+        .key-value {
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+            padding: 0.8rem 0;
+            .value {
+                .a {
+                    color: #18a9d9;
+                }
+            }
+        }
+    }
+}

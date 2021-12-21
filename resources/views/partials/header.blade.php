@@ -67,7 +67,7 @@
                 <a href="#" class="a">dc power&trade; visa&reg;</a> 
             </div>
             <div> 
-                additional dc sites <i class="fas fa-caret-down blue-line__drop-down-caret"></i>
+                <button class="btn">additional dc sites <i class="fas fa-caret-down blue-line__drop-down-caret"></i></button>
             </div>
         </div>
     </div>

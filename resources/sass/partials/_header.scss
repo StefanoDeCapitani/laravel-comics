@@ -61,6 +61,7 @@
                 }
                 .nav__sub-ul {
                     position: absolute;
+                    z-index: 1;
                     display: none;
                     top: 100%;
                     left: 0;

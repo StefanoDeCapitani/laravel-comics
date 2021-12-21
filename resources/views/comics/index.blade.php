@@ -3,9 +3,7 @@
 @section('page_title', "Homepage - DC Comics")
 
 @section('content')
-    <div class="jumbotron">
-        <img src="/images/jumbotron.jpg">
-    </div>
+    <div class="jumbotron"></div>
     <div class="current-series-section">
         <div class="container">
             <h1 class="section-title">current series</h1>
