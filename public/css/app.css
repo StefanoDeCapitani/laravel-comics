@@ -428,19 +428,25 @@
 .buy-comics--details .buy-comics-buttons__btn-group .buy-comics-buttons__btn .cta-icon.cta-icon--1 .img {
   position: absolute;
   top: 0;
-  left: -37px;
+  left: 0;
 }
 
 .buy-comics--details .buy-comics-buttons__btn-group .buy-comics-buttons__btn .cta-icon.cta-icon--2 .img {
   position: absolute;
   top: 0;
-  left: -74px;
+  left: -111px;
 }
 
 .buy-comics--details .buy-comics-buttons__btn-group .buy-comics-buttons__btn .cta-icon.cta-icon--3 .img {
   position: absolute;
   top: 0;
-  left: -111px;
+  left: -74px;
+}
+
+.buy-comics--details .buy-comics-buttons__btn-group .buy-comics-buttons__btn .cta-icon.cta-icon--4 .img {
+  position: absolute;
+  top: 0;
+  left: -37px;
 }
 
 .buy-comics--details .buy-comics-buttons__btn-group .buy-comics-buttons__btn:last-of-type {
@@ -449,6 +455,8 @@
 
 .sitemap {
   background-image: url("/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
 }
 

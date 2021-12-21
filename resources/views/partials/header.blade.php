@@ -56,7 +56,7 @@
         ],
     ]; 
 
-    $route_name = Request::route()->getName();
+    $route_name = explode(".", Request::route()->getName())[0];
 @endphp
 
 
@@ -75,7 +75,7 @@
         <a class="a nav__logo" href="{{ route("home") }}"><img src="/images/dc-logo.png" alt="DC Comics log"></a>
         <ul class="ul nav__ul">
             @foreach ($nav_links as $link)
-                <li class="nav__li {{ $route_name === $link['route'] ? "active" : "" }}">
+                <li class="nav__li {{ strpos($link['route'], $route_name) !== false ? "active" : "" }}">
                     <a class="a nav__link" href="{{ route($link['route']) }}">
                         {{ $link['name'] }}
                 @if(isset($link["sub_links"]))

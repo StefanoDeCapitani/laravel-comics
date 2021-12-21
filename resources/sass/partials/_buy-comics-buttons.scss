@@ -28,17 +28,22 @@
                 &.cta-icon--1 .img {
                     position: absolute;
                     top: 0;
-                    left: -37px;
+                    left: 0;
                 }
                 &.cta-icon--2 .img {
                     position: absolute;
                     top: 0;
-                    left: -37px * 2;
+                    left: -37px * 3;
                 }
                 &.cta-icon--3 .img {
                     position: absolute;
                     top: 0;
-                    left: -37px * 3;
+                    left: -37px * 2;
+                }
+                &.cta-icon--4 .img {
+                    position: absolute;
+                    top: 0;
+                    left: -37px;
                 }
             }
 
