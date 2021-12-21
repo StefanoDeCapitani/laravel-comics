@@ -1,44 +1,44 @@
 @php
    $nav_links = [
         [
-            "route" => "characters",
+            "route" => "characters.index",
             "name" => "characters"
         ],
         [
-            "route" => "comics",
+            "route" => "comics.index",
             "name" => "comics"
         ],
         [
-            "route" => "movies",
+            "route" => "movies.index",
             "name" => "movies"
         ],
         [
-            "route" => "tv",
+            "route" => "tv.index",
             "name" => "tv"
         ],
         [
-            "route" => "games",
+            "route" => "games.index",
             "name" => "games"
         ],
         [
-            "route" => "collectibles",
+            "route" => "collectibles.index",
             "name" => "collectibles"
         ],
         [
-            "route" => "videos",
+            "route" => "videos.index",
             "name" => "videos"
         ],
         [
-            "route" => "fans",
+            "route" => "fans.index",
             "name" => "fans"
         ],
         [
-            "route" => "news",
+            "route" => "news.index",
             "name" => "news"
         ],
         [
+            "route" => "shop.index",
             "name" => "shop",
-            "route" => "shop",
             "sub_links" => [
                 [
                     "name" => "dc shop",
@@ -55,6 +55,8 @@
             ]
         ],
     ]; 
+
+    $route_name = Request::route()->getName();
 @endphp
 
 
@@ -73,15 +75,19 @@
         <a class="a nav__logo" href="{{ route("home") }}"><img src="/images/dc-logo.png" alt="DC Comics log"></a>
         <ul class="ul nav__ul">
             @foreach ($nav_links as $link)
-                <li class="nav__li">
-                    <a class="a nav__link" href="{{ $link['route'] }}">
+                <li class="nav__li {{ $route_name === $link['route'] ? "active" : "" }}">
+                    <a class="a nav__link" href="{{ route($link['route']) }}">
                         {{ $link['name'] }}
                 @if(isset($link["sub_links"]))
                         <i class="fas fa-caret-down nav__drop-down-caret"></i>
                     </a>
                         <ul class="ul nav__sub-ul">
                             @foreach ($link['sub_links'] as $sub_link)
-                                <li class="nav__sub-li"><a class="a nav__sub-link" href="{{ $sub_link['route'] }}">{{ $sub_link['name'] }}</a></li>
+                                <li class="nav__sub-li">
+                                    <a class="a nav__sub-link" href="#">
+                                        {{ $sub_link['name'] }}
+                                    </a>
+                                </li>
                             @endforeach
                         </ul>
                 @else 

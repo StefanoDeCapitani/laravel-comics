@@ -42,8 +42,7 @@
                 .nav__drop-down-caret {
                     color: $clr_primary;
                 }
-                &::after,
-                &.active {
+                &::after {
                     content: "";
                     position: absolute;
                     bottom: 0;
@@ -52,7 +51,8 @@
                     right: 0;
                     transition: all 0.4s;
                 }
-                &:hover::after {
+                &:hover::after,
+                &.active::after {
                     top: 92%;
                     background-color: $clr_primary;
                 }
